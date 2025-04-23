@@ -71,7 +71,7 @@ class ImageController extends Controller
 
         $image->delete();
 
-        return redirect()->route('images.manage')->with('success', 'Image deleted successfully.');
+        return redirect()->route('dashboard')->with('success', 'Image deleted successfully.');
     }
 
 }
