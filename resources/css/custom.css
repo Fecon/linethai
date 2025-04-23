@@ -1,0 +1,48 @@
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.thumb {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 10px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+/* resources/css/custom.css */
+
+/* Dark mode override for Bootstrap card */
+.dark .card {
+    background-color: #2d3748 !important;  /* Tailwind slate-800 */
+    color: #f8f9fa !important;             /* Bootstrap light text */
+}
+
+/* Dark mode override for Bootstrap buttons */
+.dark .btn-outline-primary {
+    border-color: #90cdf4;
+    color: #90cdf4;
+}
+.dark .btn-outline-primary:hover {
+    background-color: #90cdf4;
+    color: #1a202c;
+}
+
+.dark .btn-outline-success {
+    border-color: #68d391;
+    color: #68d391;
+}
+.dark .btn-outline-success:hover {
+    background-color: #68d391;
+    color: #1a202c;
+}
+
+/* Dark mode for alert */
+.dark .alert-success {
+    background-color: #22543d;
+    border-color: #38a169;
+    color: #c6f6d5;
+}
