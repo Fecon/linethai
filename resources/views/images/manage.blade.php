@@ -13,12 +13,11 @@
 
     <div class="row">
         @forelse ($images as $image)
-            <div class="col-md-3 mb-4">
+            <div class="col-md-2 mb-2">
                 <div class="card">
                     <img src="{{ asset($image->image_path) }}" class="card-img-top" alt="{{ $image->title }}">
                     <div class="card-body text-center">
-                        <form action="{{ route('images.destroy', $image->id) }}" method="POST"
-                            onsubmit="return confirm('Are you sure?')">
+                        <form action="{{ route('images.destroy', $image->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm">Delete</button>
